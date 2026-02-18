@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroMenu — продаваемый AI-проект для HoReCa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">B2B SaaS / HoReCa</p>
+      <h1>NeuroMenu</h1>
+      <p class="subtitle">AI-меню, которое увеличивает средний чек и ускоряет обслуживание.</p>
+      <a href="#roi" class="cta">Посчитать ROI за 30 секунд</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid-3">
+      <article class="card">
+        <h2>Проблема</h2>
+        <p>Статичное меню не управляет спросом: теряется маржа, персонал перегружен, upsell хаотичен.</p>
+      </article>
+      <article class="card">
+        <h2>Решение</h2>
+        <p>Динамическое ранжирование блюд + smart upsell с учётом загрузки кухни и бизнес-целей.</p>
+      </article>
+      <article class="card">
+        <h2>Ценность</h2>
+        <p>Оцифрованный контроль выручки: рост чека, ускорение оборота столов и прозрачная аналитика.</p>
+      </article>
+    </section>
+
+    <section id="roi" class="roi">
+      <h2>Калькулятор экономического эффекта</h2>
+      <p>Изменяйте параметры и оцените потенциальный месячный uplift.</p>
+
+      <div class="controls">
+        <label>
+          Кол-во заказов в месяц
+          <input type="range" min="1000" max="60000" step="500" value="12000" id="orders" />
+          <span id="ordersValue">12 000</span>
+        </label>
+
+        <label>
+          Текущий средний чек (€)
+          <input type="range" min="4" max="50" step="0.5" value="11" id="avgCheck" />
+          <span id="avgCheckValue">11.0 €</span>
+        </label>
+
+        <label>
+          Прогноз роста среднего чека (%)
+          <input type="range" min="2" max="20" step="1" value="9" id="uplift" />
+          <span id="upliftValue">9%</span>
+        </label>
+      </div>
+
+      <div class="result card">
+        <p>Дополнительная выручка в месяц:</p>
+        <h3 id="extraRevenue">11 880 €</h3>
+        <p>Ориентировочная чистая добавленная прибыль (35% маржинальность):</p>
+        <h4 id="extraProfit">4 158 €</h4>
+      </div>
+    </section>
+
+    <section class="card brief">
+      <h2>Уникальное ТЗ уже готово</h2>
+      <p>Подробная спецификация: рынок, KPI, функционал MVP, риски, монетизация и roadmap.</p>
+      <a href="docs/UNIQUE_TZ.md" class="link">Открыть ТЗ</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Проект-концепт: NeuroMenu • sellable-by-design</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
